@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <style>
+        a:hover {
+            background-color: burlywood;
+        }
+
+        a.active {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Меню </h1>
+    <ul>
+        <li> <a href='main.html'> Главная страница </a> </li>
+        <li> <a href='info.html'> Информационная страница с главами </a> </li>
+        <li> <a href='test_img.html'> Изображения </a> </li>
+        <li> <a href="form.html" class="active"> Форма </a> </li>
+        <li> <a href='passport.html'>Изменяем кириллицу на латиницу по клику </a> </li>
+        <li> <a href='table.html'>Таблица </a> </li>
+        <li> <a href='1004.html'>Решение алгоритмической задачи </a> </li>
+        <li> <a href='DOM.html'>DOM_JS. Считываем информацию из DOM</a> </li>
+        <li> <a href="https://www.hse.ru/" target="_blank"> Внешний сайт </a> </li>
+        <li> <a href="https://www.hse.ru/" target="_blank"><img src="image/hse.png" width="20px" alt="" /></a></li>
+    </ul>
+    <h1>Форма 1: контактные данные</h1>
+    <form action="https://www.google.com" id="UserEnter1" name="UserEnter1" target="_blank">
+
+        <p>Фамилия: <input type="text" name="lastname" value="Иванов"></p>
+        <p>Имя: <input type="text" name="firstname" value="Иван"></p>
+        <p>Группа: <input type="text" name="group" value="Г06у28"></p>
+        <p>Мобильный телефон: <input type="tel" name="mobile" value="+7 900 000-00-00"></p>
+        <p>Электронная почта: <input type="email" name="email" value="student@example.com"></p>
+        <p>Дата отправки сообщения: <input type="date" name="send_date" value="2026-10-20"></p>
+
+        <p>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить">
+        </p>
+    </form>
+
+    <h1>Форма 2: заказ в теннисном магазине</h1>
+    <form action="https://www.google.com" id="UserEnter2" name="UserEnter2" target="_blank">
+
+        <p>ФИО заказчика: <input type="text" name="customer_name" value="Иванов Иван"></p>
+        <p><b>Тип ракетки:</b><br>
+            <input type="radio" name="racket_type" value="adult" checked> Взрослая<br>
+            <input type="radio" name="racket_type" value="junior"> Детская<br>
+            <input type="radio" name="racket_type" value="pro"> Профессиональная
+        </p>
+
+        <p><b>Дополнительно:</b><br>
+            <input type="checkbox" name="extras" value="strings" checked> Натяжка струн<br>
+            <input type="checkbox" name="extras" value="grip"> Замена обмотки<br>
+            <input type="checkbox" name="extras" value="case"> Чехол для ракетки
+        </p>
+
+        <p>Количество ракеток: <input type="number" name="racket_count" min="1" max="10" value="1"></p>
+        <p>Дата получения заказа: <input type="date" name="pickup_date" value="2026-11-01"></p>
+        <p>Пароль для личного кабинета: <input type="password" name="account_password" size="12" value="12345678"></p>
+        <p>Комментарий к заказу:<br>
+            <textarea name="order_comment" cols="40" rows="3">Пожалуйста, натяните струны на 25 кг.</textarea>
+        </p>
+        <!-- скрытое поле: например, магазин-источник заказа -->
+        <input type="hidden" name="shop_source" value="tennis_shop">
+        <p>
+            <input type="submit" value="Отправить заказ">
+            <input type="reset" value="Очистить">
+        </p>
+    </form>
+</body>
+
+</html>

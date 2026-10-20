@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Изображения</title>
+    <style>
+        figure {
+            background: gray;
+            /* Цвет фона */
+            padding: 10px;
+            /* Поля вокруг */
+            display: block;
+            /* Блочный элемент */
+            width: 1300px;
+            /* Ширина */
+            float: left;
+            /* Блоки выстраиваются по горизонтали */
+            margin: 0 10px 10px 0;
+            /* Отступы */
+            text-align: center;
+            /* Выравнивание по центру */
+        }
+
+        figcaption {
+            color: white;
+            /* Цвет текста */
+        }
+    </style>
+    <style>
+        a:hover {
+            background-color: burlywood;
+        }
+
+        a.active {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Меню </h1>
+    <ul>
+        <li> <a href='main.html'> Главная страница </a> </li>
+        <li> <a href='info.html'> Информационная страница с главами </a> </li>
+        <li> <a href='test_img.html' class="active"> Изображения </a> </li>
+        <li> <a href="form.html"> Форма </a> </li>
+        <li> <a href='passport.html'>Изменяем кириллицу на латиницу по клику </a> </li>
+        <li> <a href='table.html'>Таблица </a> </li>
+        <li> <a href='1004.html'>Решение алгоритмической задачи </a> </li>
+        <li> <a href='DOM.html'>DOM_JS. Считываем информацию из DOM</a> </li>
+        <li> <a href="https://www.hse.ru/" target="_blank"> Внешний сайт </a> </li>
+        <li> <a href="https://www.hse.ru/" target="_blank"><img src="image/hse.png" width="20px" alt="" /></a></li>
+    </ul>
+    <article>
+        <figure>
+            <p><img src="image/australian_open.webp" width="100px" alt="" /></p>
+            <figcaption>Australian Open</figcaption>
+        </figure>
+        <figure>
+            <p><img src="image/rolland_garros.webp" width="100px" alt="" /></p>
+            <figcaption>Rolland Garros</figcaption>
+        </figure>
+        <figure>
+            <p><img src="image/wimbledon.webp" width="100px" alt="" /></p>
+            <figcaption>Wimbledon</figcaption>
+        </figure>
+        <figure>
+            <p><a href="big_image.html" target="_blank"><img src="image/us_open.jpeg" width="100" alt="US Open"></a></p>
+            <figcaption>Us Open</figcaption>
+        </figure>
+    </article>
+</body>
+
+</html>

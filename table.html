@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица</title>
+    <style>
+        a:hover {
+            background-color: burlywood;
+        }
+
+        a.active {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Меню </h1>
+    <ul>
+        <li> <a href='main.html'> Главная страница </a> </li>
+        <li> <a href='info.html'> Информационная страница с главами </a> </li>
+        <li> <a href='test_img.html'> Изображения </a> </li>
+        <li> <a href="form.html"> Форма </a> </li>
+        <li> <a href='passport.html'>Изменяем кириллицу на латиницу по клику </a> </li>
+        <li> <a href='table.html' class="active">Таблица </a> </li>
+        <li> <a href='1004.html'>Решение алгоритмической задачи </a> </li>
+        <li> <a href='DOM.html'>DOM_JS. Считываем информацию из DOM</a> </li>
+        <li> <a href="https://www.hse.ru/" target="_blank"> Внешний сайт </a> </li>
+        <li> <a href="https://www.hse.ru/" target="_blank"><img src="image/hse.png" width="20px" alt="" /></a></li>
+    </ul>
+
+
+    <h3 align="center">Теннис</h3>
+
+    <table align="center" width="600" border="2" bordercolor="black" cellspacing="-15" cellpadding="10"
+        background="image/fon.jpg">
+
+        <!-- ================= Ряд 1: высота 100 ================= -->
+        <tr height="100">
+            <!-- 1-я ячейка: мяч, вправо/вверх, подпись по центру -->
+            <td align="center" valign="top">
+                <img src="image/mich_2.webp" height="50" alt="Теннисный мяч">
+                <br>
+                <center><small>Мяч</small></center>
+            </td>
+
+            <!-- 2-я ячейка: фото корта на заднем плане ячейки -->
+            <td width="200" background="image/kort.jpg">&nbsp;</td>
+        </tr>
+
+        <!-- ================= Ряд 2: высота 20, меню-разделы ================= -->
+        <tr height="20">
+            <td colspan="2" align="center">
+                <a href="#rules">Правила</a> |
+                <a href="#tournaments">Турниры</a> |
+                <a href="#gear">Инвентарь</a> |
+                <a href="#photos">Фото</a>
+            </td>
+        </tr>
+
+        <!-- ================= Ряд 3: высота 300 ================= -->
+        <tr height="300">
+            <!-- 1-я: раздел «Правила» -->
+            <td width="400" valign="top" id="rules">
+                <b>Правила</b>
+                <p>
+                    Большой теннис — вид спорта, в котором два игрока
+                    (или две команды) перебрасывают мяч ракетками через сетку.
+                </p>
+                <ul>
+                    <li><a href="#tournaments">К турнирам</a></li>
+                    <li><a href="#gear">К инвентарю</a></li>
+                    <li><a href="#top">К началу таблицы</a></li>
+                </ul>
+            </td>
+
+            <!-- 2-я: раздел «Турниры» -->
+            <td valign="top" id="tournaments">
+                <b>Турниры</b>
+                <ul>
+                    <li><a href="https://www.wimbledon.com/" target="_blank">Уимблдон</a></li>
+                    <li><a href="https://www.rolandgarros.com/" target="_blank">Ролан Гаррос</a></li>
+                    <li><a href="https://ausopen.com/" target="_blank">Australian Open</a></li>
+                    <li><a href="https://www.usopen.org/" target="_blank">US Open</a></li>
+                </ul>
+                <p><a href="#rules">К правилам</a></p>
+            </td>
+        </tr>
+
+        <!-- ================= Ряд 4: высота 300 ================= -->
+        <tr height="300">
+            <!-- 1-я: раздел «Инвентарь» + вложенная таблица 2×2 -->
+            <td width="400" valign="top" id="gear">
+                <b>Инвентарь</b>
+                <table border="1" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td>
+                            <img src="image/raket_mich.jpg" width="80" alt="Ракетка">
+                        </td>
+                        <td><a href="#rules">Правила</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#tournaments">Турниры</a></td>
+                        <td><a href="#photos">Фото</a></td>
+                    </tr>
+                </table>
+            </td>
+
+            <!-- 2-я: раздел «Фото» + миниатюра-ссылка на большое фото -->
+            <td valign="top" id="photos">
+                <b>Фото</b>
+                <br>
+                <img src="image/kort_3.jpg" width="100" border="0" alt="Теннисный корт">
+                <br>
+                <p><a href="#gear">К инвентарю</a></p>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

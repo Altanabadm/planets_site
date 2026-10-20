@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Решение алгоритмической задачи</title>
+    <style>
+        a:hover {
+            background-color: burlywood;
+        }
+
+        a.active {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Меню</h1>
+    </header>
+
+    <ul>
+        <li> <a href='main.html'> Главная страница </a> </li>
+        <li> <a href='info.html'> Информационная страница с главами </a> </li>
+        <li> <a href='test_img.html'> Изображения </a> </li>
+        <li> <a href="form.html"> Форма </a> </li>
+        <li> <a href='passport.html'>Изменяем кириллицу на латиницу по клику </a> </li>
+        <li> <a href='table.html'>Таблица </a> </li>
+        <li> <a href='1004.html' class="active">Решение алгоритмической задачи </a> </li>
+        <li> <a href='DOM.html'>DOM_JS. Считываем информацию из DOM</a> </li>
+        <li> <a href="https://www.hse.ru/" target="_blank"> Внешний сайт </a> </li>
+        <li> <a href="https://www.hse.ru/" target="_blank"><img src="image/hse.png" width="20px" alt="" /></a></li>
+
+    </ul>
+
+    <div id="task1004">
+        <h2>Задача 1004</h2>
+        <p>Можно ли в квадратном зале площадью S поместить круглую сцену радиусом R так, чтобы проход от стены до
+            сцены был не менее K?</p>
+
+        <div>Площадь зала S: <input type="number" id="S" value="100"></div>
+        <div>Радиус сцены R: <input type="number" id="R" value="3"></div>
+        <div>Проход K: <input type="number" id="K" value="1"></div>
+
+        <div style="margin-top: 10px;">
+            <button onclick="check1004()">Проверить</button>
+        </div>
+
+        <p id="result1004"></p>
+    </div>
+
+    <script src="./scripts/1004.js"></script>
+
+</body>
+
+</html>

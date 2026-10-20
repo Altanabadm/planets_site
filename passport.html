@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    a:hover {
+      background-color: burlywood;
+    }
+
+    a.active {
+      background-color: orange;
+    }
+  </style>
+  <title>Изменяем кириллицу на латиницу по клику</title>
+</head>
+
+
+<body>
+  <h1> Меню </h1>
+  <ul>
+    <li> <a href='main.html'> Главная страница </a> </li>
+    <li> <a href='info.html'> Информационная страница с главами </a> </li>
+    <li> <a href='test_img.html'> Изображения </a> </li>
+    <li> <a href="form.html"> Форма </a> </li>
+    <li> <a href='passport.html' class="active">Изменяем кириллицу на латиницу по клику </a> </li>
+    <li> <a href='table.html'>Таблица </a> </li>
+    <li> <a href='1004.html'>Решение алгоритмической задачи </a> </li>
+    <li> <a href='DOM.html'>DOM_JS. Считываем информацию из DOM</a> </li>
+    <li> <a href="https://www.hse.ru/" target="_blank"> Внешний сайт </a> </li>
+    <li> <a href="https://www.hse.ru/" target="_blank"><img src="image/hse.png" width="20px" alt="" /></a></li>
+  </ul>
+
+
+  <h2>Страница 2 паспорта</h2>
+
+  <p id="country">Российская Федерация</p>
+  <p id="document">Паспорт</p>
+  <p id="issued">ГУ МВД ПО Г.МОСКВЕ</p>
+  <p>08.05.2021</p>
+
+
+  <h2>Страница 3 паспорта</h2>
+
+  <p id="firstname">Алтана</p>
+  <p id="lastname">Бадмаева</p>
+  <p id="patronymic">Чингисовна</p>
+  <p>20.04.2007</p>
+  <p id="place_birth">г. Москва</p>
+
+<p id="for_click">Кликните здесь</p>
+
+
+</body>
+<script src="./scripts/passport.js"> </script>
+
+</html>
